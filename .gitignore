@@ -15,3 +15,8 @@ next-env.d.ts
 # misc
 .DS_Store
 *.tsbuildinfo
+
+# working files
+research/
+.zwork/
+.zcode/
