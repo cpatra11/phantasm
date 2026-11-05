@@ -29,6 +29,28 @@ npm run dev
 
 # How the agent works
 
+The whole product is this pipeline:
+
+```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "ui-sans-serif, system-ui, sans-serif",
+    "background": "#0d1117",
+    "primaryColor": "#1c2530",
+    "primaryTextColor": "#eaf0f6",
+    "primaryBorderColor": "#5a6673",
+    "lineColor": "#9fb0c0"
+  }
+}}%%
+flowchart LR
+    A["Brand URL<br/>+ prompt"] --> B["Brand kit<br/>(site scrape, logo, palette, fonts, photos)"]
+    B --> C["Storyboard cards<br/>(agent generates variants)"]
+    C --> D["Edit on the board<br/>(select layers, refine)"]
+    D --> E["Design + Animate<br/>(editable layers, one film)"]
+    E --> F["Export<br/>(MP4 / PNG)"]
+```
+
 Everything below happens in one short walk: **you paste a brand URL (e.g. `https://whisprcloud.com`), you type a prompt ("launch promo for WhisprCloud, 9:16"), you press run, and storyboards land on the board as editable, versioned cards.**
 
 ## Phase 0: Brand capture (`POST /api/brand` → `lib/brand/firecrawl.ts`)
