@@ -1,6 +1,6 @@
-# basix
+# phantasma
 
-basix turns a prompt and a brand URL into editable, brand-consistent motion graphics: titles, callouts, and short animated videos. Generate storyboard variants on a board, select layers, refine them in plain language, and export MP4 (9:16 and 16:9) and PNG.
+phantasma turns a prompt and a brand URL into editable, brand-consistent motion graphics: titles, callouts, and short animated videos. Generate storyboard variants on a board, select layers, refine them in plain language, and export MP4 (9:16 and 16:9) and PNG.
 
 ## Stack
 
